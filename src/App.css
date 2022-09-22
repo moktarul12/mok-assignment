@@ -1,0 +1,42 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--blue-200);
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background: var(--blue-400);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+.flashsale {
+
+font-size: 30px;
+margin-left: 30px;
+
+}
+.fleft {
+ float: left;
+
+}
+.cboth {
+  clear:both;
+ 
+ }
+.fleft h3{
+margin-right: 20px;
+
+}
+
+
+.icon-lowes-logo-filled{
+  width: 134px
+}
