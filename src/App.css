@@ -40,3 +40,12 @@ margin-right: 20px;
 .icon-lowes-logo-filled{
   width: 134px
 }
+
+.bg-black, .bg-black .nav-mobile-up {
+  background: #000000 !important ;
+}
+
+
+.bg-black .nav-mobile-up {
+  color: #FFF !important ;
+}

@@ -23,11 +23,16 @@ import { Addresses, Details, Orders } from './pages/Profile/components';
 import { useThemeHook } from './GlobalComponents/ThemeProvider';
 
 function App() {
-  
+  const [theme] = useThemeHook();
+
   const { token } = useAuth();
   const { loader } = useData();
   return (
     <div className='app'>
+
+      <div className={theme? 'bg-black': 'bg-light'} >
+    {console.log("================"+theme)}
+     
       {loader && <Loader />}
       <ToastContainer
         position='bottom-right'
@@ -40,6 +45,7 @@ function App() {
         draggable
       />
       <Nav />
+      
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/products' element={<ProductList />} />
@@ -80,6 +86,7 @@ function App() {
           <Route path='orders' element={<Orders />} />
         </Route>
       </Routes>
+      </div>
     </div>
   );
 }

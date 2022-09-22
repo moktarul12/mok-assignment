@@ -3,6 +3,8 @@ import { ProductCard } from '../ProductList/components';
 import './WishList.css';
 export const WishList = () => {
   const { state } = useData();
+
+  console.log(state);
   const wishData = state.products.filter((el) => el.wished);
   return (
     <main className='wishlist-main-container'>
